@@ -16,7 +16,7 @@
 
 //Unsigned data types
 typedef unsigned char uint8;		//Unsigned number with max 8 bits long
-typedef unsigned short uint16;		//Unsigned number with max 8 bits long
+typedef unsigned short uint16;		//Unsigned number with max 16 bits long
 typedef unsigned long int uint32;	//Unsigned number with max 8 bits long
 
 //Signed data types

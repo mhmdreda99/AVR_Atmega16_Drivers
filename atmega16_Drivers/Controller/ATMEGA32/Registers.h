@@ -17,6 +17,7 @@
 #define SREG	(*((volatile unsigned char* const)(0x5F)))
 #define GIE		7
 
+
 //External interrupt registers
 #define GICR	(*((volatile unsigned char* const)(0x5B)))
 #define INT1		7
@@ -110,7 +111,7 @@
 #define CS21	1		//Clock Select
 #define CS20	0		//Clock Select
 
-//Asynchronous Status Register – ASSR
+//Asynchronous Status Register ï¿½ ASSR
 #define ASSR	(*((volatile unsigned char* const)(0x42)))
 #define AS2		3		//Asynchronous Timer/Counter2
 #define TCN2UB	2		//Timer/Counter2 Update Busy

@@ -19,8 +19,9 @@
 /***************************/
 /*****Pins connection*******/
 /***************************/
-#define RS_PIN	7		//RS pin
-#define E_PIN	6		//Enable pin
+#define RS_PIN	5		//RS pin
+#define RW_PIN	6		//RW pin
+#define E_PIN	7		//Enable pin
 #define D7_PIN	5		//D7 pin
 #define D6_PIN	4		//D6 pin
 #define D5_PIN	3		//D5 pin
@@ -35,8 +36,9 @@
 /***************************/
 /*****Port connection*******/
 /***************************/
-#define RS_PORT_REG  GPIO_PORTC
-#define E_PORT_REG   GPIO_PORTC
+#define RS_PORT_REG  GPIO_PORTA
+#define RW_PORT_REG  GPIO_PORTA
+#define E_PORT_REG   GPIO_PORTA
 #define D7_PORT_REG  GPIO_PORTC
 #define D6_PORT_REG  GPIO_PORTC
 #define D5_PORT_REG  GPIO_PORTC

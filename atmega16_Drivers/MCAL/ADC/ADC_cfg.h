@@ -20,8 +20,8 @@
 //#define PRESCALER_4
 //#define PRESCALER_8
 //#define PRESCALER_16
-//#define PRESCALER_32
-#define PRESCALER_64
+#define PRESCALER_32
+//#define PRESCALER_64
 //#define PRESCALER_128
 
 /*******ADC resolution***********/

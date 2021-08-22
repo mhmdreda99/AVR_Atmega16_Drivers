@@ -217,6 +217,7 @@ StdReturn GPIO_togglePin(GPIO_port port, uint8 pin) {
 			return E_NOK;
 		}
 	}
+	
 
 	return E_OK;
 }

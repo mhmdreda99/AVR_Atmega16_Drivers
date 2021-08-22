@@ -22,7 +22,7 @@
  **************************************************************/
 static void (*user_func0)(void);
 static void (*user_func1)(void);
-static void (*user_func2)(void);
+static void (*user_func2)(void);  //0x55
 
 
 /***************************************************************
@@ -49,7 +49,7 @@ StdReturn extInt0_init(extInt_senseControl senseLevel) {
 
 	//Enable external interrupt 0 mask
 	SET_BIT(GICR, INT0);
-
+  
 	//Configure sense control
 	switch (senseLevel) {
 	case EXTINT_RISING_EDGE:		//Rising edge causes interrupt
@@ -131,3 +131,4 @@ StdReturn extInt2_callback(void (*func_ptr)(void)) {
 	user_func2 = func_ptr;
 	return E_OK;
 }
+

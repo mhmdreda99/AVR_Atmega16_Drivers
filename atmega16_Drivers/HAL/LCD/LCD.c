@@ -32,20 +32,26 @@ static void intToString(uint16 number, uint8 *txt);
 void LCD_init(void) {
 	GPIO_setPinDirection(RS_PORT_REG, RS_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(E_PORT_REG, E_PIN, GPIO_OUTPUT);
+	GPIO_setPinDirection(RW_PORT_REG, D4_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D7_PORT_REG, D7_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D6_PORT_REG, D6_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D5_PORT_REG, D5_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D4_PORT_REG, D4_PIN, GPIO_OUTPUT);
+	GPIO_writePin(RS_PORT_REG, RS_PIN, GPIO_LOW);
+	GPIO_writePin(E_PORT_REG, E_PIN, GPIO_LOW);
+	GPIO_writePin(RW_PORT_REG, RW_PIN, GPIO_LOW);
 #ifdef _8_BIT_MODE
 	GPIO_setPinDirection(D3_PORT_REG, D3_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D2_PORT_REG, D2_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D1_PORT_REG, D1_PIN, GPIO_OUTPUT);
 	GPIO_setPinDirection(D0_PORT_REG, D0_PIN, GPIO_OUTPUT);
 #endif
+	LCD_writeCmd(LCD_ENTRY_MODE);
 	LCD_writeCmd(LCD_GO_HOME);
 	LCD_writeCmd(LCD_4_BIT_MODE);
 	LCD_writeCmd(lCD_CLEAR);
 	LCD_writeCmd(LCD_CURSOR_OFF);
+
 
 	_delay_ms(10);
 }

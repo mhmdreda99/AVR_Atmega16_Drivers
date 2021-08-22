@@ -21,6 +21,7 @@
 #include "Registers.h"
 
 
+
 /********************************EXT INT ISR**********************************/
 #define ISR(vector, ...) \
 	void vector(void) __attribute__ ((signal,used,externally_visible)) __VA_ARGS__;\
@@ -49,7 +50,7 @@
 
 
 //Macro for enable global interrupt
-#define ENABLE_GLOBAL_INTERRUPT()		(SREG |=  (1<<GIE))
+#define ENABLE_GLOBAL_INTERRUPT()		(SREG |=  (1<<GIE)) // sei();
 //Macro for enable global interrupt
 #define DISABLE_GLOBAL_INTERRUPT()		(SREG &= ~(1<<GIE))
 

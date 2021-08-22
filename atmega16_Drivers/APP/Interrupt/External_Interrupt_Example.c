@@ -1,9 +1,3 @@
-/*
- * main.c
- *
- *  Created on: Sep 20, 2019
- *      Author: Muhamed Kotp
- */
 
 #include <util/delay.h>
 #include <avr/interrupt.h>

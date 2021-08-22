@@ -20,6 +20,7 @@
 #include "../../Controller/ATMEGA32/Interrupts.h"
 #include "../../Service/StdMacros.h"
 #include "../../Service/StdTypes.h"
+#include "../../Controller/ATMEGA32/Delay.h"
 #include "../../Controller/ATMEGA32/Registers.h"
 
 /***************************************************************
